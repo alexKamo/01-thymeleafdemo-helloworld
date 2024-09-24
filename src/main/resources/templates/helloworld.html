@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Thymeleaf Demo</title>
+</head>
+
+<body style="background-color:powderblue;">
+
+<p th:text="'Time on the server is ' + ${theDate}" />
+<p th:text="'First name is ' + ${firstName}" />
+<p th:text="'Last name is ' + ${lastName}" />
+
+<h2>HTML Forms</h2>
+
+<form style="background-color:powderblue;" action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Alex" ><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Kamo" ><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+
+</html>
