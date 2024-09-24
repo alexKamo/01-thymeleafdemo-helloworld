@@ -9,7 +9,7 @@ public class DemoController {
 
     // create a mapping for "/hello"
 
-    @GetMapping("/homepage")
+    @GetMapping("/homepage2")
     public String homePage(Model theModel) {
 
         theModel.addAttribute("theDate", java.time.LocalDateTime.now());
@@ -17,6 +17,6 @@ public class DemoController {
         theModel.addAttribute("lastName", "Pik");
 
 
-        return "index";
+        return "index2";
     }
 }
