@@ -19,4 +19,38 @@ public class DemoController {
 
         return "index2";
     }
+
+    @GetMapping("/hi")
+    public String hi(Model theModel) {
+
+        theModel.addAttribute("theDate", java.time.LocalDateTime.now());
+        theModel.addAttribute("firstName", "Oleksandr");
+        theModel.addAttribute("lastName", "Pik");
+
+
+        return "helloworld";
+    }
+
+    @GetMapping("/homepage")
+    public String homePage2(Model theModel) {
+
+        theModel.addAttribute("theDate", java.time.LocalDateTime.now());
+        theModel.addAttribute("firstName", "Oleksandr");
+        theModel.addAttribute("lastName", "Pik");
+
+
+        return "homepage";
+    }
+
+    @GetMapping("/homepage1")
+    public String homePage1(Model theModel) {
+
+        theModel.addAttribute("theDate", java.time.LocalDateTime.now());
+        theModel.addAttribute("firstName", "Oleksandr");
+        theModel.addAttribute("lastName", "Pik");
+
+
+        return "index";
+    }
+
 }
