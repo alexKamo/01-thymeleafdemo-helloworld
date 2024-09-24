@@ -17,6 +17,6 @@ public class DemoController {
         theModel.addAttribute("lastName", "Pik");
 
 
-        return "helloworld.html";
+        return "helloworld";
     }
 }
