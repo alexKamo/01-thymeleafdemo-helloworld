@@ -1,0 +1,15 @@
+.funny{
+    font-style: italic;
+    color: green;
+}
+
+#name{
+    font-style: italic;
+    color black;
+    border:5px;
+    background-color: orange;
+}
+p{
+    font-style: italic;
+    color black;
+}
